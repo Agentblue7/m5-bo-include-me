@@ -1,0 +1,65 @@
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 30px;
+    background-color: rgba(220, 197, 239, 1);
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-svg {
+    width: 68px;
+    height: 68px;
+    flex-shrink: 0;
+}
+
+.logo-text {
+    font-family:
+        "Fredoka",
+        system-ui,
+        -apple-system,
+        sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #7c3aed;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.logo-text h1 {
+    margin: 0;
+}
+
+.navbar-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-left: auto;
+}
+
+.navbar-buttons a {
+    color: black;
+    text-decoration: none;
+    border-left: 2px solid #7c3aed;
+    padding: 10px;
+    margin: 0;
+    padding-right: 10px;
+}

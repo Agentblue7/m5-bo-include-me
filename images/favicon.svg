@@ -1,0 +1,15 @@
+ <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                                  <circle cx="100" cy="100" r="90" fill="#FEF3C7" opacity="0.5"></circle>
+                                  <circle cx="70" cy="70" r="30" fill="#DBEAFE" opacity="0.6"></circle>
+                                  <circle cx="140" cy="120" r="25" fill="#FCE7F3" opacity="0.6"></circle>
+                                  <g class="float-1">
+                                    <circle cx="75" cy="90" r="18" fill="#7C3AED"></circle>
+                                    <path d="M75 108 Q60 130 65 145 L85 145 Q90 130 75 108" fill="#7C3AED"></path>
+                                    <circle cx="125" cy="95" r="18" fill="#14B8A6"></circle>
+                                    <path d="M125 113 Q110 135 115 150 L135 150 Q140 135 125 113" fill="#14B8A6"></path>
+                                  </g>
+                                  <path class="heart" d="M100 85 Q90 75 80 75 Q70 75 70 85 Q70 95 100 115 Q130 95 130 85 Q130 75 120 75 Q110 75 100 85" fill="#F97316" opacity="0.85"></path>
+                                  <circle cx="160" cy="50" r="6" fill="#7C3AED" opacity="0.35" class="float-2"></circle>
+                                  <circle cx="40" cy="140" r="5" fill="#14B8A6" opacity="0.35"></circle>
+                                  <circle cx="170" cy="150" r="4" fill="#F97316" opacity="0.35"></circle>
+                                </svg>

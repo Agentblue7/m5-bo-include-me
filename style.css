@@ -53,13 +53,64 @@ nav {
     align-items: center;
     gap: 24px;
     margin-left: auto;
+    font-size: 18px;
 }
 
-.navbar-buttons a {
-    color: black;
+.navbar-buttons a:not(.demoCTA) {
+    position: relative;
+    padding: 8px 2px;
+    color: #3b2b50;
     text-decoration: none;
-    border-left: 2px solid #7c3aed;
-    padding: 10px;
-    margin: 0;
-    padding-right: 10px;
+    border: 0;
+    transition: color 180ms ease;
+}
+
+.navbar-buttons a:not(.demoCTA)::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 2px;
+    height: 2px;
+    background: #7c3aed;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 180ms ease;
+}
+
+.navbar-buttons a:not(.demoCTA):hover {
+    color: #7c3aed;
+}
+
+.navbar-buttons a:not(.demoCTA):hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-buttons .demoCTA {
+    border: 0;
+    text-decoration: none;
+    border-radius: 999px;
+    padding: 12px 20px;
+    background: #7c3aed;
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 4px  #5521a8;
+    transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+}
+
+.navbar-buttons .demoCTA:hover {
+    background:rgba(255, 234, 159, 1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 0 rgba(245, 197, 24, 1);
+    color: black;
+}
+
+.navbar-buttons .demoCTA:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 0 rgba(245, 197, 24, 1);
+}
+
+.navbar-buttons .demoCTA:focus-visible {
+    outline: 3px solid #111;
+    outline-offset: 3px;
 }

@@ -7,6 +7,12 @@ body {
     background-color: rgba(255, 247, 223, 1);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
 main {
     background-color: rgba(255, 247, 223, 1);
 }
@@ -18,8 +24,6 @@ p {
 }
 
 nav {
-    position: sticky;
-    top: 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -219,10 +223,6 @@ nav {
 }
 
 .eye-btns .register:hover {
-    transform: translateY(-2px);
-}
-
-.eye-btns .register:hover {
     background: rgba(255, 234, 159, 1);
     transform: translateY(-2px);
     box-shadow: 0 6px 0 rgba(245, 197, 24, 1);
@@ -232,6 +232,7 @@ nav {
 .eye-btns .register:active {
     transform: translateY(1px);
     box-shadow: 0 2px 0 rgba(245, 197, 24, 1);
+    background: rgba(255, 234, 159, 1);
 }
 
 .eye-btns .demo:hover {

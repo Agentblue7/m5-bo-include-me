@@ -238,3 +238,213 @@ nav {
 .eye-btns .demo:hover {
     background: rgba(124, 58, 237, 0.1);
 }
+
+
+.info {
+    display: flex;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 0 5rem 0;
+    padding-top: 5rem;
+}
+
+.about h2 {
+    margin: 0;
+    padding: 15px;
+    font-family: "Fredoka", system-ui, sans-serif;
+    text-align: center;
+    font-size: 58px;
+    color: rgba(250, 209, 0, 1);
+}
+
+.about h3 {
+    margin: 0 0 1.5rem;
+    color: #5521a8;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-size: 22px;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+    padding-bottom: 12px;
+    border-bottom: 2px solid rgba(124, 58, 237, 0.25);
+}
+
+.aboutInfo,
+.samenwerken {
+    flex: 1 1 300px;
+    padding: 2rem 3rem;
+    box-sizing: border-box;
+    background: #e6d4f4;
+    border: 1px solid rgba(124, 58, 237, 0.14);
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(70, 38, 98, 0.12);
+}
+
+.aboutInfo p,
+.samenwerken p {
+    margin: 0;
+    color: #3b2b50;
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.aboutInfo p + p,
+.samenwerken ul {
+    margin-top: 1.25rem;
+}
+
+.aboutInfo p span {
+    display: inline-block;
+    margin: 0 0.35rem 0.25rem 0;
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(124, 58, 237, 0.12);
+    color: #5521a8;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.samenwerken ul {
+    display: grid;
+    gap: 0.75rem;
+    padding: 0;
+    list-style: none;
+}
+
+.samenwerken li {
+    position: relative;
+    padding: 0.8rem 1rem 0.8rem 2rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.45);
+    color: #3b2b50;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.samenwerken li::before {
+    position: absolute;
+    top: 1.35rem;
+    left: 1rem;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #7c3aed;
+    content: "";
+}
+
+.samenwerken li strong {
+    color: #5521a8;
+}
+
+.samenwerken .pitchdeck-intro {
+    margin-top: 1.25rem;
+}
+
+.pitchdeck {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.65rem;
+    padding: 0.4rem 0.8rem;
+    border: 1px solid rgba(124, 58, 237, 0.35);
+    border-radius: 999px;
+    background: rgba(124, 58, 237, 0.1);
+    color: #5521a8;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-decoration: none;
+    transition:
+        background-color 180ms ease,
+        color 180ms ease;
+}
+
+.pitchdeck:hover {
+    background: #7c3aed;
+    color: white;
+}
+
+.pitchdeck:focus-visible,
+.contactInfo a:focus-visible {
+    outline: 3px solid #5521a8;
+    outline-offset: 3px;
+}
+
+.contact {
+    padding: 0 5rem 5rem;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 25px;
+    color: #5521a8;
+    font-family: "Fredoka", system-ui, sans-serif;
+    font-size: 48px;
+    text-align: center;
+}
+
+.contactInfo {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 3rem;
+    border: 1px solid rgba(124, 58, 237, 0.14);
+    border-radius: 24px;
+    background: #e6d4f4;
+    box-shadow: 0 18px 45px rgba(70, 38, 98, 0.12);
+}
+
+.contactInfo p {
+    margin: 0;
+    color: #3b2b50;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.contactInfo ul {
+    display: grid;
+    gap: 0.75rem;
+    margin: 1.25rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.contactInfo li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.75rem;
+    align-items: baseline;
+    padding: 0.85rem 1rem;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.45);
+    color: #3b2b50;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.contactInfo li strong {
+    min-width: 5.5rem;
+    color: #5521a8;
+}
+
+.contactInfo a {
+    color: #5521a8;
+    font-weight: 600;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+}
+
+
+.site-footer {
+    padding: 0rem 1rem 3rem;
+
+    color: #777174;
+    text-align: center;
+}
+
+.site-footer p {
+    margin: 0;
+    color: inherit;
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.9;
+}

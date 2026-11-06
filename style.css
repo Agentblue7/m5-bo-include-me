@@ -448,3 +448,67 @@ nav {
     font-size: 15px;
     line-height: 1.9;
 }
+
+.language-switch {
+    position: fixed;
+    right: 1.25rem;
+    bottom: 1.25rem;
+    z-index: 20;
+}
+
+.language-toggle {
+    position: relative;
+    display: grid;
+    width: 96px;
+    height: 44px;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    padding: 4px;
+    overflow: hidden;
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    border-radius: 999px;
+    background: #e6d4f4;
+    box-shadow: 0 4px 14px rgba(70, 38, 98, 0.2);
+    cursor: pointer;
+}
+
+.language-toggle::before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: calc(50% - 4px);
+    height: calc(100% - 8px);
+    border-radius: 999px;
+    background: #7c3aed;
+    content: "";
+    transition: transform 180ms ease;
+}
+
+.language-toggle[aria-checked="true"]::before {
+    transform: translateX(100%);
+}
+
+.language-option {
+    z-index: 1;
+    color: #5521a8;
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.language-toggle[aria-checked="false"] .language-option-nl,
+.language-toggle[aria-checked="true"] .language-option-en {
+    color: white;
+}
+
+.language-toggle:focus-visible {
+    outline: 3px solid #5521a8;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .language-toggle::before {
+        transition: none;
+    }
+}
